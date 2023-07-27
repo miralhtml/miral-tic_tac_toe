@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MirAl Tic-Tac toe</title>
+    <link rel="icon" type="image/x-icon" href="icons/806131.png">
+    <link rel="stylesheet" href="tic_tac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="area">
+            <audio id="audio" src="soundtrack/Komiku_-_13_-_Good_Fellow.mp3" ></audio>
+            <div class="game">
+                <h1 class="title" > <p><i>MirAl <br> Tic-Tac toe</i></p> </h1>
+            </div>
+            <div>
+                <button class="btnStart" ><p><i>New Game</i></p></button>
+            </div>
+            <form class="modal">
+                <label><p><i>Choose a number beetwen <br> 3 to 7 </i></p></label>
+                <input type="number" id="inputCell" class = "inputCell">
+                <input type="submit" value="Start Game" class="input_btn">
+            </form>
+            <div class="icons">
+                <img id="mute" onclick="mute()" src="icons/volume.png">
+            </div>
+        </div>
+        <div class="winner">
+            <h2></h2>
+            <!-- <div class="form">
+                <form action="send_mail.php" id="form" class="form_body" method="post">
+                    <h1 class="form_title">Sending data</h1>
+                    <div class="form_item">
+                        <label for="forName" class="form_label">Name*</label>
+                        <input id="for_Name" type="text" name="name" class="form_input">
+                    </div>
+                    <div class="form_item">
+                        <label for="for_Email" class="form_label">Email*</label>
+                        <input id="for_Email" type="email" name="Email" class="form_input">
+                    </div>
+                    <button type="submit" class="form_button">To Send</button>
+                </form> -->
+            </div>
+        </div>
+        <div class="control">
+            <button class="btn_restart"> <i class="fas fa-sync"></i> Restart</button>
+            <button class="btn_quit"><i class="fas fa-power-off"></i> Quit</button>
+        </div>
+
+    </div>
+
+    <script src="tic_tac.js"></script>
+</body>
+</html>
